@@ -13,13 +13,13 @@ function FAQPage() {
   ];
 
   return (
-    <div className="p-6">
-      <h2 className="text-2xl font-bold mb-6">Frequently Asked Questions</h2>
-      <div className="space-y-4">
+    <div className="page">
+      <h2>Frequently Asked Questions</h2>
+      <div className="faq-list">
         {faqs.map((faq, index) => (
-          <div key={index} className="border-b pb-4">
-            <h3 className="font-semibold text-lg mb-2">{faq.question}</h3>
-            <p className="text-gray-700">{faq.answer}</p>
+          <div key={index} className="faq-item">
+            <h3>{faq.question}</h3>
+            <p>{faq.answer}</p>
           </div>
         ))}
       </div>
